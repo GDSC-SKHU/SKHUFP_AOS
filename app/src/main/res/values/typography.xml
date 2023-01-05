@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name ="B70">
         <item name="fontFamily">@font/pretendard_bold</item>
         <item name="android:textSize">70dp</item>
@@ -15,6 +16,12 @@
     <style name ="SB16">
         <item name="fontFamily">@font/pretendard_semibold</item>
         <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name ="SB18">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">18dp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 

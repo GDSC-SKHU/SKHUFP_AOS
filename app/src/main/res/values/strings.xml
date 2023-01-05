@@ -19,7 +19,7 @@
     <string name="winter">겨울</string>
     <string name="etc">기타</string>
 
-    <!--메인 뷰-->
+    <!--메인 뷰 & add_dailylook 뷰-->
     <string name="all">전체</string>
     <string name="top">상의</string>
     <string name="bottom">하의</string>
@@ -27,15 +27,18 @@
     <string name="shoes">신발</string>
     <string name="bag">가방</string>
     <string name="stuff">잡화</string>
+    <string name="select_finish">선택 완료</string>
+    <string name="update_dailylook">데일리룩 등록</string>
 
     <!--add closet 뷰-->
-    <string name="image_description">이미지 불러오기</string>
     <string name="season">계절</string>
     <string name="category">카테고리</string>
     <string name="name">이름</string>
     <string name="memo">메모</string>
-    <string name=""
+    <string name="add_closet_explanation1">이미지 불러오기</string>
+    <string name="add_closet_explanation2">봄,여름,가을,겨울 (복수 선택 가능)</string>
 
     <!--dailylook 뷰-->
+    <string name="dailylook_list">데일리룩 목록</string>
 
 </resources>
