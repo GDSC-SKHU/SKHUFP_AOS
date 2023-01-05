@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name ="B70">
+        <item name="fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">70dp</item>
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name ="B32">
+        <item name="fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name ="SB16">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name ="SB24">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name ="R16">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name ="R14">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name ="R13">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name ="R10">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

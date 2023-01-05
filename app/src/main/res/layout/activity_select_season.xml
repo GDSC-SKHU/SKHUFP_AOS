@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/select_season_tv_My"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name1"
+        android:theme="@style/B32"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/select_season_tv_closet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name2"
+        android:theme="@style/B32"
+        android:paddingLeft="10dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/select_season_tv_My"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_season_btn_spring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spring"
+        android:paddingHorizontal="67dp"
+        android:paddingVertical="40dp"
+        android:theme="@style/SB24"
+        android:layout_marginLeft="28dp"
+        android:backgroundTint="@color/main_color"
+        android:background="@drawable/season_rectangle_radius_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_season_tv_closet"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_season_btn_summer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/summer"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="40dp"
+        android:theme="@style/SB24"
+        android:layout_marginLeft="25dp"
+        android:backgroundTint="@color/main_color"
+        android:background="@drawable/season_rectangle_radius_10"
+        app:layout_constraintLeft_toRightOf="@id/select_season_btn_spring"
+        app:layout_constraintTop_toBottomOf="@id/select_season_tv_closet"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_season_btn_autumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/season_rectangle_radius_10"
+        android:backgroundTint="@color/main_color"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="40dp"
+        android:text="@string/autumn"
+        android:theme="@style/SB24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_season_btn_spring" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_season_btn_winter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/winter"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="40dp"
+        android:theme="@style/SB24"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/main_color"
+        android:background="@drawable/season_rectangle_radius_10"
+        app:layout_constraintLeft_toRightOf="@id/select_season_btn_spring"
+        app:layout_constraintTop_toBottomOf="@id/select_season_btn_summer"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etc"
+        android:theme="@style/SB24"
+        android:backgroundTint="@color/start_signup_color"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@id/select_season_btn_autumn"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

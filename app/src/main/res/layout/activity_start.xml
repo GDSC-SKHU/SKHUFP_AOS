@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/start_tv_My"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name1"
+        android:theme="@style/B70"
+        android:layout_marginTop="107dp"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/start_tv_closet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name2"
+        android:theme="@style/B70"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_tv_My"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:theme="@style/SB16"
+        android:background="@drawable/signup_rectangle_radius_5"
+        android:backgroundTint="@color/main_color"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_tv_closet"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_start"
+        android:theme="@style/SB16"
+        android:background="@drawable/signup_rectangle_radius_5"
+        android:backgroundTint="@color/start_signup_color"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_btn_login"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
