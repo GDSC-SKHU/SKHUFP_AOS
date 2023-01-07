@@ -36,9 +36,11 @@
     <string name="name">이름</string>
     <string name="memo">메모</string>
     <string name="add_closet_explanation1">이미지 불러오기</string>
-    <string name="add_closet_explanation2">봄,여름,가을,겨울 (복수 선택 가능)</string>
 
     <!--dailylook 뷰-->
     <string name="dailylook_list">데일리룩 목록</string>
+
+    <!--closet detail뷰-->
+    <string name="update">확인/수정</string>
 
 </resources>

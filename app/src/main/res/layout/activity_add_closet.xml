@@ -30,57 +30,58 @@
         android:id="@+id/add_closet_tv_season"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:padding="10dp"
         android:text="@string/season"
         android:theme="@style/SB18"
-        android:padding="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet"/>
+        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet" />
 
     <CheckBox
         android:id="@+id/add_closet_cb_spring"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="28dp"
+        android:paddingRight="20dp"
         android:text="@string/spring"
         android:theme="@style/R14"
-        android:layout_marginTop="24dp"
-        android:paddingRight="20dp"
         app:layout_constraintLeft_toRightOf="@id/add_closet_tv_season"
-        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet"/>
+        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet" />
 
     <CheckBox
         android:id="@+id/add_closet_cb_summer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingRight="20dp"
         android:text="@string/summer"
         android:theme="@style/R14"
-        android:layout_marginTop="24dp"
-        android:paddingRight="20dp"
         app:layout_constraintLeft_toRightOf="@id/add_closet_cb_spring"
-        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet"/>
+        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet" />
 
     <CheckBox
         android:id="@+id/add_closet_cb_autumn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingRight="20dp"
         android:text="@string/autumn"
         android:theme="@style/R14"
-        android:layout_marginTop="24dp"
-        android:paddingRight="20dp"
         app:layout_constraintLeft_toRightOf="@id/add_closet_cb_summer"
-        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet"/>
+        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet" />
 
     <CheckBox
         android:id="@+id/add_closet_cb_winter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingRight="20dp"
         android:text="@string/winter"
         android:theme="@style/R14"
-        android:layout_marginTop="24dp"
-        android:paddingRight="20dp"
         app:layout_constraintLeft_toRightOf="@id/add_closet_cb_autumn"
-        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet"/>
+        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_closet" />
 
     <TextView
         android:id="@+id/add_closet_tv_category"
@@ -104,7 +105,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,51 +149,64 @@
         android:id="@+id/add_closet_tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:padding="10dp"
         android:text="@string/name"
         android:theme="@style/SB18"
-        android:padding="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="35dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rGroup_category"/>
+        app:layout_constraintTop_toBottomOf="@id/rGroup_category" />
 
     <EditText
         android:id="@+id/signup_edt_phone"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/signup_rectangle_radius_5"
-        android:inputType="text"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="29dp"
-        android:padding="10dp"
         android:backgroundTint="@color/sub_color"
+        android:inputType="text"
+        android:padding="10dp"
         app:layout_constraintLeft_toRightOf="@id/add_closet_tv_name"
-        app:layout_constraintTop_toBottomOf="@id/rGroup_category"/>
+        app:layout_constraintTop_toBottomOf="@id/rGroup_category" />
 
     <TextView
         android:id="@+id/add_closet_tv_memo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:padding="10dp"
         android:text="@string/memo"
         android:theme="@style/SB18"
-        android:padding="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="35dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_name"/>
+        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_name" />
 
     <EditText
         android:id="@+id/add_closet_edt_memo"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/signup_rectangle_radius_5"
-        android:inputType="text"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="29dp"
-        android:padding="10dp"
         android:backgroundTint="@color/sub_color"
+        android:inputType="text"
+        android:padding="10dp"
         app:layout_constraintLeft_toRightOf="@id/add_closet_tv_memo"
-        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_name"/>
+        app:layout_constraintTop_toBottomOf="@id/add_closet_tv_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_dailylook"
+        android:theme="@style/SB16"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/main_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_closet_edt_memo"
+        android:background="@drawable/season_rectangle_radius_10"/>
 
 
 
