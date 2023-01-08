@@ -39,8 +39,11 @@
 
     <!--dailylook 뷰-->
     <string name="dailylook_list">데일리룩 목록</string>
+    <string name="plus">+</string>
 
     <!--closet detail뷰-->
     <string name="update">확인/수정</string>
+
+
 
 </resources>
