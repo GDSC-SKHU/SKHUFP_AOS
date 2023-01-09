@@ -4,10 +4,17 @@ import android.app.Notification.Action
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.example.mycloset.fragment.closet.FragmentAll
+import com.example.mycloset.fragment.closet.FragmentBag
+import com.google.android.material.tabs.TabLayout.Tab
 
 @Suppress("deprecation")
 class MainActivity : AppCompatActivity(), ActionBar.TabListener {
+
+    lateinit var actionBar : ActionBar // actionbar 참조 변수
+
 
     lateinit var tabAll : ActionBar.Tab
     lateinit var tabTop : ActionBar.Tab
@@ -17,10 +24,21 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
     lateinit var tabBag : ActionBar.Tab
     lateinit var tabStuff : ActionBar.Tab
 
-    var myFrags = arrayOfNulls<MyTabFragment>(7)
+    /*lateinit var fragAll : Fragment
+    lateinit var fragOuter : Fragment
+    lateinit var fragmentTop: Fragment
+    lateinit var fragmentBottom: Fragment
+    lateinit var fragmentshoes: Fragment
+    lateinit var fragmentBag:  Fragment
+    lateinit var fragmentStuff: Fragment*/
+
+
+    var myFrags = arrayOfNulls<Fragment>(7)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
         var bar = this.supportActionBar // 상단에 표시할 액션바 준비
         // 탭 호스트와 같이 탭의 모양이 되도록 설정
         bar!!.navigationMode = ActionBar.NAVIGATION_MODE_TABS
@@ -42,7 +60,7 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
 
         tabOuter = bar.newTab()
         tabOuter.text = "아우터"
-       tabOuter.setTabListener(this)
+        tabOuter.setTabListener(this)
         bar.addTab(tabOuter)
 
         tabShoes = bar.newTab()
@@ -59,12 +77,10 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
         tabStuff.text = "잡화"
         tabStuff.setTabListener(this)
         bar.addTab(tabStuff)
-
-        //setContentView(R.layout.activity_main)
     }
 
     override fun onTabSelected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        var myTabFrag : MyTabFragment? = null
+        /*var myTabFrag : Fragment? = null
 
         if(myFrags[tab!!.position]==null){
             myTabFrag = MyTabFragment()
@@ -75,7 +91,19 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
         } else {
             myTabFrag = myFrags[tab.position]
         }
-        ft!!.replace(android.R.id.content,myTabFrag!!)
+        ft!!.replace(android.R.id.content,myTabFrag!!)*/
+        var position :Int = tab!!.position
+
+        when(position) {
+            0 -> setContentView(R.layout.fragment_all)
+            1 -> setContentView(R.layout.fragment_top)
+            2 -> setContentView(R.layout.fragment_bottom)
+            3 -> setContentView(R.layout.fragment_outer)
+            4 -> setContentView(R.layout.fragment_shoes)
+            5 -> setContentView(R.layout.fragment_bag)
+            6 -> setContentView(R.layout.fragment_stuff)
+
+        }
     }
 
     override fun onTabUnselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
