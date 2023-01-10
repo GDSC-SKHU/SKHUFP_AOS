@@ -36,6 +36,7 @@
     <string name="name">이름</string>
     <string name="memo">메모</string>
     <string name="add_closet_explanation1">이미지 불러오기</string>
+    <string name="add_closet">옷 등록</string>
 
     <!--dailylook 뷰-->
     <string name="dailylook_list">데일리룩 목록</string>

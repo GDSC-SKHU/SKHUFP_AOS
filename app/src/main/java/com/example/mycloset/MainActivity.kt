@@ -1,6 +1,7 @@
 package com.example.mycloset
 
 import android.app.Notification.Action
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
@@ -8,7 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.example.mycloset.fragment.closet.FragmentAll
 import com.example.mycloset.fragment.closet.FragmentBag
+import com.example.mycloset.presentation.closet.AddClosetActivity
 import com.google.android.material.tabs.TabLayout.Tab
+import kotlinx.android.synthetic.main.fragment_all.*
+import kotlinx.android.synthetic.main.fragment_bag.*
+import kotlinx.android.synthetic.main.fragment_bottom.*
+import kotlinx.android.synthetic.main.fragment_outer.*
+import kotlinx.android.synthetic.main.fragment_shoes.*
+import kotlinx.android.synthetic.main.fragment_stuff.*
+import kotlinx.android.synthetic.main.fragment_top.*
 
 @Suppress("deprecation")
 class MainActivity : AppCompatActivity(), ActionBar.TabListener {
@@ -77,6 +86,36 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
         tabStuff.text = "잡화"
         tabStuff.setTabListener(this)
         bar.addTab(tabStuff)
+
+        //프래그먼트 버튼 클릭이벤트리스너
+        /*fragment_all_btn_add.setOnClickListener {
+            var intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+        fragment_top_btn_add.setOnClickListener {
+            var intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+        fragment_bottom_btn_add.setOnClickListener {
+            var intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+        fragment_outer_btn_add.setOnClickListener {
+            var intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+        fragmemt_shoes_btn_add.setOnClickListener {
+            var intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+        fragment_stuff_btn_add.setOnClickListener {
+            var intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+        fragment_bag_btn_add.setOnClickListener {
+            var intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }*/
     }
 
     override fun onTabSelected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
@@ -111,4 +150,5 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
 
     override fun onTabReselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
     }
+
 }
