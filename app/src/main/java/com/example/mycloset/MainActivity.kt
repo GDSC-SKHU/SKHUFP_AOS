@@ -1,16 +1,10 @@
 package com.example.mycloset
 
-import android.app.Notification.Action
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.example.mycloset.fragment.closet.FragmentAll
-import com.example.mycloset.fragment.closet.FragmentBag
-import com.example.mycloset.presentation.closet.AddClosetActivity
-import com.google.android.material.tabs.TabLayout.Tab
 import kotlinx.android.synthetic.main.fragment_all.*
 import kotlinx.android.synthetic.main.fragment_bag.*
 import kotlinx.android.synthetic.main.fragment_bottom.*
@@ -46,7 +40,7 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
 
         var bar = this.supportActionBar // 상단에 표시할 액션바 준비
         // 탭 호스트와 같이 탭의 모양이 되도록 설정

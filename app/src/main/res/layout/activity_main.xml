@@ -27,5 +27,19 @@
         app:layout_constraintTop_toBottomOf="@id/main_tv_My"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_tv_closet"
+        android:background="@drawable/signup_rectangle_radius_5"
+        android:backgroundTint="@color/main_color"
+        android:text="@string/plus"
+        android:theme="@style/SB30" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
