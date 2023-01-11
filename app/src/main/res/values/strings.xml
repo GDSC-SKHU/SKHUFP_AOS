@@ -18,6 +18,7 @@
     <string name="autumn">가을</string>
     <string name="winter">겨울</string>
     <string name="etc">기타</string>
+    <string name="select_dailylook">데일리룩</string>
 
     <!--메인 뷰 & add_dailylook 뷰-->
     <string name="all">전체</string>

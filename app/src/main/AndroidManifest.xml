@@ -29,9 +29,12 @@
         <activity android:name=".presentation.login.LoginActivity"/>
         <activity android:name=".presentation.login.SignupActivity"/>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".presentation.closet.SelectSeasonActivity"/>
         <activity android:name=".presentation.closet.AddClosetActivity"/>
         <activity android:name=".presentation.closet.ClosetDetailActivity"/>
-        <activity android:name=".fragment.closet.FragmentAllActivity"/>
+        <activity android:name=".fragment.main.AllFragment"/>
+        <activity android:name=".presentation.dailylook.DailylookActivity"/>
+        <activity android:name=".presentation.dailylook.AddDailylookActivity"/>
     </application>
 
 </manifest>

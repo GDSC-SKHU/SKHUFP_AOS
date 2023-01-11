@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
 
     lateinit var actionBar : ActionBar // actionbar 참조 변수
 
-
     lateinit var tabAll : ActionBar.Tab
     lateinit var tabTop : ActionBar.Tab
     lateinit var tabBottom : ActionBar.Tab
@@ -81,50 +80,10 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
         tabStuff.setTabListener(this)
         bar.addTab(tabStuff)
 
-        //프래그먼트 버튼 클릭이벤트리스너
-        /*fragment_all_btn_add.setOnClickListener {
-            var intent = Intent(this,AddClosetActivity::class.java)
-            startActivity(intent)
-        }
-        fragment_top_btn_add.setOnClickListener {
-            var intent = Intent(this,AddClosetActivity::class.java)
-            startActivity(intent)
-        }
-        fragment_bottom_btn_add.setOnClickListener {
-            var intent = Intent(this,AddClosetActivity::class.java)
-            startActivity(intent)
-        }
-        fragment_outer_btn_add.setOnClickListener {
-            var intent = Intent(this,AddClosetActivity::class.java)
-            startActivity(intent)
-        }
-        fragmemt_shoes_btn_add.setOnClickListener {
-            var intent = Intent(this,AddClosetActivity::class.java)
-            startActivity(intent)
-        }
-        fragment_stuff_btn_add.setOnClickListener {
-            var intent = Intent(this,AddClosetActivity::class.java)
-            startActivity(intent)
-        }
-        fragment_bag_btn_add.setOnClickListener {
-            var intent = Intent(this,AddClosetActivity::class.java)
-            startActivity(intent)
-        }*/
     }
 
     override fun onTabSelected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        /*var myTabFrag : Fragment? = null
 
-        if(myFrags[tab!!.position]==null){
-            myTabFrag = MyTabFragment()
-            val data = Bundle()
-            data.putString("tabName",tab.text.toString())
-            myTabFrag.arguments = data
-            myFrags[tab.position] = myTabFrag
-        } else {
-            myTabFrag = myFrags[tab.position]
-        }
-        ft!!.replace(android.R.id.content,myTabFrag!!)*/
         var position :Int = tab!!.position
 
         when(position) {
