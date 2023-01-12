@@ -34,7 +34,7 @@ class SelectSeasonActivity : AppCompatActivity() {
         }
 
         select_season_btn_etc.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
+            var intent = Intent(this, AddClosetActivity::class.java)
             startActivity(intent)
         }
 

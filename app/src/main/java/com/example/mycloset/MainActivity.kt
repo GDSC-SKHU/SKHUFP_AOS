@@ -2,9 +2,14 @@ package com.example.mycloset
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.mycloset.fragment.closet.AddClosetFragment
+import com.example.mycloset.fragment.main.AllFragment
+import kotlinx.android.synthetic.main.fragment_add_closet.*
 import kotlinx.android.synthetic.main.fragment_all.*
 import kotlinx.android.synthetic.main.fragment_bag.*
 import kotlinx.android.synthetic.main.fragment_bottom.*
@@ -25,14 +30,6 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
     lateinit var tabShoes : ActionBar.Tab
     lateinit var tabBag : ActionBar.Tab
     lateinit var tabStuff : ActionBar.Tab
-
-    /*lateinit var fragAll : Fragment
-    lateinit var fragOuter : Fragment
-    lateinit var fragmentTop: Fragment
-    lateinit var fragmentBottom: Fragment
-    lateinit var fragmentshoes: Fragment
-    lateinit var fragmentBag:  Fragment
-    lateinit var fragmentStuff: Fragment*/
 
 
     var myFrags = arrayOfNulls<Fragment>(7)
@@ -80,6 +77,7 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
         tabStuff.setTabListener(this)
         bar.addTab(tabStuff)
 
+
     }
 
     override fun onTabSelected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
@@ -102,6 +100,16 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
     }
 
     override fun onTabReselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
+    }
+
+    fun changeFragment(index : Int) {
+        when(index){
+            1 -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_add_closet,AddClosetFragment())
+                    .commit()
+            }
+        }
     }
 
 }
