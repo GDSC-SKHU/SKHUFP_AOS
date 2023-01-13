@@ -1,115 +1,85 @@
 package com.example.mycloset
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.TabActivity
+import android.content.Intent
+
 import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.ActionBar
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import com.example.mycloset.fragment.closet.AddClosetFragment
-import com.example.mycloset.fragment.main.AllFragment
-import kotlinx.android.synthetic.main.fragment_add_closet.*
-import kotlinx.android.synthetic.main.fragment_all.*
-import kotlinx.android.synthetic.main.fragment_bag.*
-import kotlinx.android.synthetic.main.fragment_bottom.*
-import kotlinx.android.synthetic.main.fragment_outer.*
-import kotlinx.android.synthetic.main.fragment_shoes.*
-import kotlinx.android.synthetic.main.fragment_stuff.*
-import kotlinx.android.synthetic.main.fragment_top.*
+
+import com.example.mycloset.presentation.closet.AddClosetActivity
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 @Suppress("deprecation")
-class MainActivity : AppCompatActivity(), ActionBar.TabListener {
-
-    lateinit var actionBar : ActionBar // actionbar 참조 변수
-
-    lateinit var tabAll : ActionBar.Tab
-    lateinit var tabTop : ActionBar.Tab
-    lateinit var tabBottom : ActionBar.Tab
-    lateinit var tabOuter : ActionBar.Tab
-    lateinit var tabShoes : ActionBar.Tab
-    lateinit var tabBag : ActionBar.Tab
-    lateinit var tabStuff : ActionBar.Tab
-
-
-    var myFrags = arrayOfNulls<Fragment>(7)
-
+class MainActivity : TabActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
-        var bar = this.supportActionBar // 상단에 표시할 액션바 준비
-        // 탭 호스트와 같이 탭의 모양이 되도록 설정
-        bar!!.navigationMode = ActionBar.NAVIGATION_MODE_TABS
+        var tabHost = this.tabHost
 
-        tabAll = bar.newTab() // 액션바에 탭 생성
-        tabAll.text = "전체"
-        tabAll.setTabListener(this) // 탭을 터치하면 작동하는 리스너 지정
-        bar.addTab(tabAll) // 액션바에 탭 추가
+        var tabSpecAll =tabHost.newTabSpec("All").setIndicator("전체")
+        tabSpecAll.setContent(R.id.tabAll)
+        tabHost.addTab(tabSpecAll)
 
-        tabTop = bar.newTab()
-        tabTop.text = "상의"
-        tabTop.setTabListener(this)
-        bar.addTab(tabTop)
+        var tabSpecOuter =tabHost.newTabSpec("Outer").setIndicator("아우터")
+        tabSpecOuter.setContent(R.id.tabOuter)
+        tabHost.addTab(tabSpecOuter)
 
-        tabBottom = bar.newTab()
-        tabBottom.text = "하의"
-        tabBottom.setTabListener(this)
-        bar.addTab(tabBottom)
+        var tabSpecTop =tabHost.newTabSpec("Top").setIndicator("상의")
+        tabSpecTop.setContent(R.id.tabTop)
+        tabHost.addTab(tabSpecTop)
 
-        tabOuter = bar.newTab()
-        tabOuter.text = "아우터"
-        tabOuter.setTabListener(this)
-        bar.addTab(tabOuter)
+        var tabSpecBottom =tabHost.newTabSpec("Bottom").setIndicator("하의")
+        tabSpecBottom.setContent(R.id.tabBottom)
+        tabHost.addTab(tabSpecBottom)
 
-        tabShoes = bar.newTab()
-        tabShoes.text = "신발"
-        tabShoes.setTabListener(this)
-        bar.addTab(tabShoes)
+        var tabSpecShoes =tabHost.newTabSpec("Shoes").setIndicator("신발")
+        tabSpecShoes.setContent(R.id.tabShoes)
+        tabHost.addTab(tabSpecShoes)
 
-        tabBag = bar.newTab()
-        tabBag.text = "가방"
-        tabBag.setTabListener(this)
-        bar.addTab(tabBag)
+        var tabSpecBag =tabHost.newTabSpec("Bag").setIndicator("가방")
+        tabSpecBag.setContent(R.id.tabBag)
+        tabHost.addTab(tabSpecBag)
 
-        tabStuff = bar.newTab()
-        tabStuff.text = "잡화"
-        tabStuff.setTabListener(this)
-        bar.addTab(tabStuff)
+        var tabSpecStuff =tabHost.newTabSpec("Stuff").setIndicator("잡화")
+        tabSpecStuff.setContent(R.id.tabStuff)
+        tabHost.addTab(tabSpecStuff)
 
 
-    }
+        tabHost.currentTab = 0
 
-    override fun onTabSelected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
+        // 탭 내 화면전환 버튼 클릭이벤트
+        main_btn_all_add.setOnClickListener {
+            intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
 
-        var position :Int = tab!!.position
+        main_btn_outer_add.setOnClickListener {
+            intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+        main_btn_top_add.setOnClickListener {
+            intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+        main_btn_bottom_add.setOnClickListener {
+            intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
 
-        when(position) {
-            0 -> setContentView(R.layout.fragment_all)
-            1 -> setContentView(R.layout.fragment_top)
-            2 -> setContentView(R.layout.fragment_bottom)
-            3 -> setContentView(R.layout.fragment_outer)
-            4 -> setContentView(R.layout.fragment_shoes)
-            5 -> setContentView(R.layout.fragment_bag)
-            6 -> setContentView(R.layout.fragment_stuff)
+        main_btn_shoes_add.setOnClickListener {
+            intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
 
+        main_btn_bag_add.setOnClickListener {
+            intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
+        }
+
+        main_btn_stuff_add.setOnClickListener {
+            intent = Intent(this,AddClosetActivity::class.java)
+            startActivity(intent)
         }
     }
-
-    override fun onTabUnselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-    }
-
-    override fun onTabReselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-    }
-
-    fun changeFragment(index : Int) {
-        when(index){
-            1 -> {
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragment_add_closet,AddClosetFragment())
-                    .commit()
-            }
-        }
-    }
-
 }

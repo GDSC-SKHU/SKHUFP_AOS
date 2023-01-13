@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.mycloset.MainActivity
 import com.example.mycloset.R
 import com.example.mycloset.presentation.dailylook.AddDailylookActivity
+import com.example.mycloset.presentation.dailylook.DailylookActivity
 import kotlinx.android.synthetic.main.activity_select_season.*
 
 class SelectSeasonActivity : AppCompatActivity() {
@@ -39,7 +40,7 @@ class SelectSeasonActivity : AppCompatActivity() {
         }
 
         select_season_btn_dailylook.setOnClickListener {
-            var intent = Intent(this, AddDailylookActivity::class.java)
+            var intent = Intent(this, DailylookActivity::class.java)
             startActivity(intent)
         }
     }
