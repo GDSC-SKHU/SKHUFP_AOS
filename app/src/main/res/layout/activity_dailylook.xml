@@ -124,14 +124,29 @@
             android:id="@+id/dailylook_btn_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0.3"
             android:background="@drawable/signup_rectangle_radius_5"
             android:backgroundTint="@color/main_color"
             android:text="@string/plus"
             android:theme="@style/SB30" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dailylook_btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/signup_rectangle_radius_5"
+            android:backgroundTint="@color/main_color"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:theme="@style/SB24" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

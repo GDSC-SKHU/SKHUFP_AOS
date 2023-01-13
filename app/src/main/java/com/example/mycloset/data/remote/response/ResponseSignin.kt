@@ -3,6 +3,7 @@ package com.example.mycloset.data.remote.response
 data class ResponseSignin (
     val timestamp : String,
     val status : Int,
+    val statusDetail : String,
     val code : String,
     val message : String,
     val data : Data

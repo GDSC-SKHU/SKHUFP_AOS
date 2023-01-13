@@ -1,20 +1,20 @@
-package com.example.mycloset
+package com.example.mycloset.presentation.closet
 
 import android.app.TabActivity
 import android.content.Intent
 
 import android.os.Bundle
+import com.example.mycloset.R
 
 import com.example.mycloset.presentation.closet.AddClosetActivity
-import com.example.mycloset.presentation.closet.SelectSeasonActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 @Suppress("deprecation")
-class MainActivity : TabActivity(){
+class AutumnClosetActivity : TabActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_autumncloset)
 
         var tabHost = this.tabHost
 
@@ -83,39 +83,6 @@ class MainActivity : TabActivity(){
             startActivity(intent)
         }
 
-        main_btn_all_back.setOnClickListener {
-            intent = Intent(this, SelectSeasonActivity::class.java)
-            startActivity(intent)
-        }
 
-        main_btn_outer_back.setOnClickListener {
-            intent = Intent(this, SelectSeasonActivity::class.java)
-            startActivity(intent)
-        }
-
-        main_btn_top_back.setOnClickListener {
-            intent = Intent(this, SelectSeasonActivity::class.java)
-            startActivity(intent)
-        }
-
-        main_btn_bottom_back.setOnClickListener {
-            intent = Intent(this, SelectSeasonActivity::class.java)
-            startActivity(intent)
-        }
-
-        main_btn_shoes_back.setOnClickListener {
-            intent = Intent(this, SelectSeasonActivity::class.java)
-            startActivity(intent)
-        }
-
-        main_btn_bag_back.setOnClickListener {
-            intent = Intent(this, SelectSeasonActivity::class.java)
-            startActivity(intent)
-        }
-
-        main_btn_stuff_back.setOnClickListener {
-            intent = Intent(this, SelectSeasonActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

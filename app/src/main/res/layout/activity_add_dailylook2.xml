@@ -21,8 +21,183 @@
         android:text="@string/app_name2"
         android:theme="@style/B32"
         android:paddingLeft="10dp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="5dp"
         app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_My"
         app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/dailylook2_btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="228dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/ic_clear"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/add_dailylook2_iv_top"
+        app:layout_constraintLeft_toRightOf="@id/add_dailylook2_tv_closet" />
+
+    <ImageView
+        android:id="@+id/add_dailylook2_iv_outer"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/season_rectangle_radius_10"
+        android:backgroundTint="@color/sub_color"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_closet" />
+
+    <TextView
+        android:id="@+id/add_dailylook2_tv_outer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/outer"
+        android:theme="@style/R16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_iv_outer" />
+
+    <ImageView
+        android:id="@+id/add_dailylook2_iv_top"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/season_rectangle_radius_10"
+        android:backgroundTint="@color/sub_color"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_closet" />
+
+    <TextView
+        android:id="@+id/add_dailylook2_tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/top"
+        android:theme="@style/R16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_iv_top" />
+
+    <ImageView
+        android:id="@+id/add_dailylook2_iv_bottom"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/season_rectangle_radius_10"
+        android:backgroundTint="@color/sub_color"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_top" />
+
+    <TextView
+        android:id="@+id/add_dailylook2_tv_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/bottom"
+        android:theme="@style/R16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_iv_bottom" />
+
+    <ImageView
+        android:id="@+id/add_dailylook2_iv_bottom2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/season_rectangle_radius_10"
+        android:backgroundTint="@color/sub_color"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_top" />
+
+    <TextView
+        android:id="@+id/add_dailylook2_tv_bottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="192dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/bottom"
+        android:theme="@style/R16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_iv_outer" />
+
+    <ImageView
+        android:id="@+id/add_dailylook2_iv_shoes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="408dp"
+        android:background="@drawable/season_rectangle_radius_10"
+        android:backgroundTint="@color/sub_color"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_My" />
+
+    <TextView
+        android:id="@+id/add_dailylook2_tv_shoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="376dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/shoes"
+        android:theme="@style/R16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_iv_outer" />
+
+    <ImageView
+        android:id="@+id/add_dailylook2_iv_bag"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="408dp"
+        android:background="@drawable/season_rectangle_radius_10"
+        android:backgroundTint="@color/sub_color"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_My" />
+
+    <ImageView
+        android:id="@+id/add_dailylook2_iv_stuff"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="492dp"
+        android:background="@drawable/season_rectangle_radius_10"
+        android:backgroundTint="@color/sub_color"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_My" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dailylook_btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_dailylook"
+        android:theme="@style/SB16"
+        android:background="@drawable/signup_rectangle_radius_5"
+        android:backgroundTint="@color/main_color"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dailylook2_tv_shoes"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

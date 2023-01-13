@@ -4,7 +4,8 @@
 
     <!-- 갤러리 권한 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 인터넷 접속 권한 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 인터넷 접속 권한 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -33,15 +34,34 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".presentation.login.LoginActivity" />
-        <activity android:name=".presentation.login.SignupActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".presentation.closet.SelectSeasonActivity" />
-        <activity android:name=".presentation.closet.AddClosetActivity" />
-        <activity android:name=".presentation.closet.ClosetDetailActivity" />
-        <activity android:name=".fragment.main.AllFragment" />
-        <activity android:name=".presentation.dailylook.DailylookActivity" />
-        <activity android:name=".presentation.dailylook.AddDailylookActivity" />
+        <activity android:name=".presentation.login.LoginActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.login.SignupActivity"
+            android:noHistory="true"/>
+        <activity android:name=".MainActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.closet.SelectSeasonActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.closet.AddClosetActivity"
+            android:noHistory="false"/>
+        <activity android:name=".presentation.closet.ClosetDetailActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.closet.SpringClosetActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.closet.SummerClosetActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.closet.AutumnClosetActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.closet.WinterClosetActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.closet.EtcClosetActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.dailylook.DailylookActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.dailylook.AddDailylookActivity"
+            android:noHistory="true"/>
+        <activity android:name=".presentation.dailylook.AddDailylook2Activity"
+            android:noHistory="true"/>
     </application>
 
 </manifest>

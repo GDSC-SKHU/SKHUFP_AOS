@@ -8,7 +8,7 @@ import retrofit2.http.POST
 
 interface LoginService  {
     // 로그인
-    @POST("login")
+    @POST("sign-in")
     fun postLogin(
         @Body body : RequestLogin
     ): Call<ResponseSignin>

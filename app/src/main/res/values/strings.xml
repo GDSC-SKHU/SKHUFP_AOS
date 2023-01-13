@@ -10,7 +10,7 @@
     <string name="signup_start">회원가입</string>
     <string name="signup_end">가입하기</string>
     <string name="login">로그인</string>
-    <string name="back">이전화면으로</string>
+    <string name="back">back</string>
 
     <!--계절 선택 뷰-->
     <string name="spring">봄 </string>

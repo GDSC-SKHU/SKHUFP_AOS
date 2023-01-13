@@ -111,12 +111,26 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="0.3"
                     android:background="@drawable/signup_rectangle_radius_5"
                     android:backgroundTint="@color/main_color"
                     android:text="@string/plus"
                     android:theme="@style/SB30" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/main_btn_all_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/signup_rectangle_radius_5"
+                    android:backgroundTint="@color/main_color"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    android:theme="@style/SB24" />
             </LinearLayout>
 
             <LinearLayout
@@ -210,12 +224,26 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="0.3"
                     android:background="@drawable/signup_rectangle_radius_5"
                     android:backgroundTint="@color/main_color"
                     android:text="@string/plus"
                     android:theme="@style/SB30" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/main_btn_outer_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/signup_rectangle_radius_5"
+                    android:backgroundTint="@color/main_color"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    android:theme="@style/SB24" />
 
             </LinearLayout>
             <LinearLayout
@@ -309,12 +337,26 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="0.3"
                     android:background="@drawable/signup_rectangle_radius_5"
                     android:backgroundTint="@color/main_color"
                     android:text="@string/plus"
                     android:theme="@style/SB30" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/main_btn_top_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/signup_rectangle_radius_5"
+                    android:backgroundTint="@color/main_color"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    android:theme="@style/SB24" />
 
             </LinearLayout>
             <LinearLayout
@@ -408,12 +450,26 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="0.3"
                     android:background="@drawable/signup_rectangle_radius_5"
                     android:backgroundTint="@color/main_color"
                     android:text="@string/plus"
                     android:theme="@style/SB30" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/main_btn_bottom_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/signup_rectangle_radius_5"
+                    android:backgroundTint="@color/main_color"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    android:theme="@style/SB24" />
 
             </LinearLayout>
             <LinearLayout
@@ -507,12 +563,26 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="0.3"
                     android:background="@drawable/signup_rectangle_radius_5"
                     android:backgroundTint="@color/main_color"
                     android:text="@string/plus"
                     android:theme="@style/SB30" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/main_btn_shoes_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/signup_rectangle_radius_5"
+                    android:backgroundTint="@color/main_color"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    android:theme="@style/SB24" />
 
             </LinearLayout>
             <LinearLayout
@@ -606,12 +676,26 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="0.3"
                     android:background="@drawable/signup_rectangle_radius_5"
                     android:backgroundTint="@color/main_color"
                     android:text="@string/plus"
                     android:theme="@style/SB30" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/main_btn_bag_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/signup_rectangle_radius_5"
+                    android:backgroundTint="@color/main_color"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    android:theme="@style/SB24" />
 
             </LinearLayout>
             <LinearLayout
@@ -705,12 +789,26 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="0.3"
                     android:background="@drawable/signup_rectangle_radius_5"
                     android:backgroundTint="@color/main_color"
                     android:text="@string/plus"
                     android:theme="@style/SB30" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/main_btn_stuff_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/signup_rectangle_radius_5"
+                    android:backgroundTint="@color/main_color"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    android:theme="@style/SB24" />
 
             </LinearLayout>
         </FrameLayout>
